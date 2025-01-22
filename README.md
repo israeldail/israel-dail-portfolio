@@ -1,4 +1,4 @@
-# Portflio
+# Portfolio
 
 This portfolio website will include projects done for clients (I will have a website to show soon as a case study).
 It will also include any significant school projects that I finish since I am focusing my degree on computer programming (AS).
