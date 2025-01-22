@@ -28,7 +28,7 @@ function Navbar() {
     return (
         <div className="flex justify-around items-center p-5 bg-[#51e2f5]">
           <div className="text-lg font-bold">Israel Dail</div>
-          <div className="flex gap-6">
+          <div className="flex gap-3">
             {items.map((item, index) => (
               <div key={index} className="relative group">
                 <div className="flex justify-center items-center bg-[#9df9ef] hover:bg-opacity-50 cursor-pointer h-12 w-12 rounded-md text-white">
