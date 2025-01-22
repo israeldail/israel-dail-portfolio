@@ -20,7 +20,7 @@ export default {
     // colors: {
     //   "brightblue": "#51e2f5",
     //   "bluegreen": "#9df9ef",
-    //   "dustywhite": "#edf756",
+    //   "dustywhite": "#f5f5f5",
     //   "pinksand": "#ffa8B6",
     // }
   },
