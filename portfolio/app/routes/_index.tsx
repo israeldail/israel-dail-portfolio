@@ -9,7 +9,9 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div>Hello</div>
+    <div className="text-center p-10">
+      boilerplate
+    </div>
   );
 }
 
