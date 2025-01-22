@@ -17,12 +17,12 @@ export default {
         ],
       },
     },
-    colors: {
-      "brightblue": "#51e2f5",
-      "bluegreen": "#9df9ef",
-      "dustywhite": "#edf756",
-      "pinksand": "#ffa8B6",
-    }
+    // colors: {
+    //   "brightblue": "#51e2f5",
+    //   "bluegreen": "#9df9ef",
+    //   "dustywhite": "#edf756",
+    //   "pinksand": "#ffa8B6",
+    // }
   },
   plugins: [],
 } satisfies Config;
