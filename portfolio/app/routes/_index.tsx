@@ -10,13 +10,13 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className="flex flex-col gap-3 lg:gap-8 items-center mx-auto max-w-[1200px] w-[calc(100%-40px)] p-6 lg:p-12 lg:flex-row lg:justify-center lg:flex-wrap">
-      <div className="bg-[#a28089] text-[#2D2D2D] rounded p-4 lg:p-6 w-full transform hover:-translate-y-[5%] hover:shadow-lg transition duration-500 ease-in-out border border-[#000000] border-opacity-20 lg:basis-[38%] lg:grow">
+      <div className="bg-[#a28089] text-[#2D2D2D] rounded p-4 lg:p-6 w-full transform hover:-translate-y-[5%] hover:shadow-lg transition duration-500 ease-in-out border border-[#000000] border-opacity-20 lg:basis-[50%] lg:grow">
         <p className="text-base leading-relaxed">
           Hi, I'm <span className="text-[#51e2f5]">Israel Dail</span>, a passionate web designer and developer with a flair for creativity and functionality. I specialize in crafting responsive, user-friendly web applications that merge innovative design with seamless performance. Currently pursuing a A.S. in Computer Programming and Analysis, I’m constantly expanding my skill set and exploring new technologies. My journey is fueled by a love for problem-solving, continuous learning, and turning ideas into impactful digital experiences. Let’s build something amazing together!
         </p>
       </div>
 
-      <div className="bg-[#a28089] text-[#2D2D2D] rounded p-4 lg:p-6 w-full transform hover:-translate-y-[5%] hover:shadow-lg transition duration-500 ease-in-out border border-[#000000] border-opacity-20 lg:basis-[58%] lg:grow">
+      <div className="bg-[#a28089] text-[#2D2D2D] rounded p-4 lg:p-6 w-full transform hover:-translate-y-[5%] hover:shadow-lg transition duration-500 ease-in-out border border-[#000000] border-opacity-20 lg:basis-[50%] lg:grow">
         <div className="grid grid-cols-[repeat(1,8em)] md:grid-cols-[repeat(4,8em)] gap-2">
           <div className="flex items-center gap-2 mb-3">
             <div className="h-6 w-6 bg-yellow-300 rounded-full"></div>
