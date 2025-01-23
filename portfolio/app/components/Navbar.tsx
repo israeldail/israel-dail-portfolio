@@ -28,8 +28,8 @@ function Navbar() {
   ]
 
   return (
-    <div className="flex flex-col md:flex-row justify-around items-center p-5 bg-[#51e2f5]">
-      <div className="text-lg font-bold">Israel Dail</div>
+    <div className="flex flex-col md:flex-row justify-around items-center p-2 bg-[#51e2f5]">
+      <div className="text-xl font-bold">Israel Dail</div>
       <div className="flex gap-3">
         {items.map((item, index) => (
           <div key={index} className="relative group">
