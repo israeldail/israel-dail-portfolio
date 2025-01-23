@@ -29,9 +29,9 @@ export default function Index() {
         </div>
         <div className="py-2 px-1 rounded border-2 border-yellow-300 bg-[#f5f5f5]">
           <p className="text-2xl font-bold">Miami Dade College</p>
-          <p className="text-[#36454F]">A.S. Computer Programming and Analysis - Business Applications</p>
-          <p className="text-[#36454F]">Anticipated Graduation year - 2026</p>
-          <p className="text-[#36454F]">Classes Currently enrolled in: Intro to Python Programming</p>
+          <p className="text-[#36454F] text-sm md:text-base"><span className="font-bold">A.S. Computer Programming and Analysis</span> - Business Applications</p>
+          <p className="text-[#36454F] text-sm md:text-base"><span className="font-bold">Anticipated Graduation year</span> - 2026</p>
+          <p className="text-[#36454F] text-sm md:text-base"><span className="font-bold">Classes Currently enrolled in:</span> Intro to Python Programming</p>
         </div>
       </div>
 
