@@ -22,6 +22,6 @@ export default defineConfig({
     tsconfigPaths(),
   ],
   server: {
-    allowedHosts: ['5173-israeldail-israeldailpo-aj0yx7993yh.ws-us117.gitpod.io'],
+    allowedHosts: ['5173-israeldail-israeldailpo-azrrqdgza28.ws-us117.gitpod.io'],
   }
 });
