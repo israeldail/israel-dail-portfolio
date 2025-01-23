@@ -12,8 +12,8 @@ export default function Index() {
     <div className="flex flex-col items-center mx-auto w-[calc(100%-40px)] p-12 md:flex-row md:justify-center">
       { /* TODO: add meaningful content - short bio of myself, highlight skills, highlight current educational path,
            highlight done or on-going projects, link to contact form  */ }
-      <div>
-        
+      <div className="bg-[#a28089] rounded p-6 self-start md:mr-auto">
+        content
       </div>
     </div>
   );
