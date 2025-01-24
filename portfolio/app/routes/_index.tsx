@@ -11,7 +11,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className="flex flex-col gap-4 lg:gap-8 items-center mx-auto max-w-[1200px] w-[calc(100%-40px)] p-8 lg:p-12 lg:flex-row lg:justify-center lg:flex-wrap">
-      <div className="bg-[#a28089] text-[#1E1E1E] rounded p-4 lg:p-6 w-full shadow-md transform hover:-translate-y-[2%] hover:shadow-lg transition duration-500 ease-in-out border border-[#000000] border-opacity-20 lg:basis-[50%] lg:grow">
+      <div className="bg-[#a28089] text-[#1E1E1E] rounded p-4 lg:p-6 w-full shadow-md transform hover:-translate-y-[2%] hover:shadow-lg transition duration-500 ease-in-out border border-[#000000] border-opacity-20 lg:basis-[100%] lg:grow">
         <div className="text-4xl p-4 font-bold">Bio</div>
         <hr className="my-4 border-t-2 border-[#1E1E1E] opacity-50" />
         <p className="text-base leading-relaxed">
@@ -19,7 +19,7 @@ export default function Index() {
         </p>
       </div>
 
-      <div className="bg-[#a28089] text-[#1E1E1E] rounded p-4 lg:p-6 w-full shadow-md transform hover:-translate-y-[2%] hover:shadow-lg transition duration-500 ease-in-out border border-[#000000] border-opacity-20 lg:basis-[50%] lg:grow">
+      <div className="bg-[#a28089] text-[#1E1E1E] rounded p-4 lg:p-6 w-full shadow-md transform hover:-translate-y-[2%] hover:shadow-lg transition duration-500 ease-in-out border border-[#000000] border-opacity-20 lg:basis-[100%] lg:grow">
         <div className="text-4xl p-4 font-bold">Education</div>
         <hr className="my-4 border-t-2 border-[#1E1E1E] opacity-50" />
         <div className="grid grid-cols-[repeat(1,8em)] md:grid-cols-[repeat(4,8em)] gap-2">
@@ -40,7 +40,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="bg-[#a28089] text-[#1E1E1E] rounded p-4 lg:p-6 w-full shadow-md transform hover:-translate-y-[2%] hover:shadow-lg transition duration-500 ease-in-out border border-[#000000] border-opacity-20 lg:basis-[48%] lg:grow">
+      <div className="bg-[#a28089] text-[#1E1E1E] rounded p-4 lg:p-6 w-full shadow-md transform hover:-translate-y-[2%] hover:shadow-lg transition duration-500 ease-in-out border border-[#000000] border-opacity-20 lg:basis-[100%] lg:grow">
         <div className="text-4xl p-4 font-bold">Skills</div>
         <hr className="my-4 border-t-2 border-[#1E1E1E] opacity-50" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 justify-items-center">
@@ -50,7 +50,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="bg-[#a28089] text-[#1E1E1E] rounded p-4 lg:p-6 w-full shadow-md transform hover:-translate-y-[2%] hover:shadow-lg transition duration-500 ease-in-out border border-[#000000] border-opacity-20 lg:basis-[48%] lg:grow">
+      <div className="bg-[#a28089] text-[#1E1E1E] rounded p-4 lg:p-6 w-full shadow-md transform hover:-translate-y-[2%] hover:shadow-lg transition duration-500 ease-in-out border border-[#000000] border-opacity-20 lg:basis-[100%] lg:grow">
         <div className="text-4xl p-4 font-bold">Projects</div>
         <hr className="my-4 border-t-2 border-[#1E1E1E] opacity-50" />
         <p className="text-sm font-bold md:text-2xl">Kado Club<span className="text-sm font-normal md:text-base"> - finished product coming soon.</span></p>
