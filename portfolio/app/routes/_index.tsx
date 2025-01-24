@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { Link } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -58,7 +59,7 @@ export default function Index() {
       <div className="bg-[#a28089] text-[#1E1E1E] rounded p-4 lg:p-6 w-full shadow-md transform hover:-translate-y-[5%] hover:shadow-lg transition duration-500 ease-in-out border border-[#000000] border-opacity-20 lg:basis-[100%] lg:grow">
         <div className="text-4xl p-4 font-bold">Contact</div>
         <hr className="my-4 border-t-2 border-[#1E1E1E] opacity-50" />
-        <p className="text-sm font-bold md:text-2xl">Like what you see? Let's work together! <span className="text-sm font-bold md:text-2xl"><i className="fa-solid fa-arrow-right"></i></span> </p>
+        <Link to={'/contact'} className="text-sm font-bold md:text-2xl hover:text-[#51e2f5] duration-300 cursor-pointer">Like what you see? Let's work together! <span className="text-sm font-bold md:text-2xl"><i className="fa-solid fa-arrow-right"></i></span> </Link>
       </div>
     </div>
   );
