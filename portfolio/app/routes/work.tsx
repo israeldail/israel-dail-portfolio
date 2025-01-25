@@ -1,9 +1,57 @@
 export default function Work() {
+  const projects = [
+    {
+      title: "Project 1",
+      description: "placeholder description.",
+      image: "https://placehold.co/600x400", // Add your project image
+      technologies: ["React", "TypeScript", "Tailwind"],
+      link: "https://project-link.com"
+    },
+    // Add more projects as needed
+  ];
+
   return (
-    <div className="flex flex-col gap-4 items-center mx-auto max-w-[1200px] w-[calc(100%-40px)] p-8 lg:gap-8 lg:p-12 lg:flex-row lg:justify-center lg:flex-wrap">
-      <div className="flex items-center bg-[#a28089] p-4 min-w-[200px] w-full text-[#1E1E1E] rounded text-sm shadow-md border border-[#000000] border-opacity-20 md:text-base lg:p-6 lg:basis-[100%] lg:grow">
-        <i className="fa-solid fa-circle-info fa-2x text-[#51e2f5]"></i>
-        <p className="text-sm md:text-base px-4">Under construction... will update as soon as possible.</p>
+    <div className="flex flex-col gap-8 items-center mx-auto max-w-[1200px] w-[calc(100%-40px)] p-8 lg:p-12">
+      <h1 className="text-3xl font-bold text-center mb-4">My Work</h1>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+        {projects.map((project, index) => (
+          <div key={index} className="bg-[#a28089] rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-[1.02]">
+            <div className="aspect-video w-full bg-gray-100">
+              {/* Replace with your image component */}
+              <img 
+                src={project.image} 
+                alt={project.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            
+            <div className="p-6">
+              <h2 className="text-xl text-[#f5f5f5] font-semibold mb-2">{project.title}</h2>
+              <p className="text-[#f5f5f5] mb-4">{project.description}</p>
+              
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.technologies.map((tech, techIndex) => (
+                  <span 
+                    key={techIndex}
+                    className="px-3 py-1 bg-[#9df9ef] rounded-full text-sm"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <a 
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
