@@ -1,11 +1,11 @@
 export default function Work() {
   const projects = [
     {
-      title: "Project 1",
-      description: "placeholder description.",
-      image: "https://placehold.co/600x400", // Add your project image
-      technologies: ["React", "TypeScript", "Tailwind"],
-      link: "https://project-link.com"
+      title: "SELD Conference Registration Form",
+      description: "This is a registration form for Seventh Day Adventist Church. It is a single page form that allows users to register for their yearly event. It is built with HTML, CSS, and JavaScript. The backend is an external excel sheet that the form saves to.",
+      image: "https://placehold.co/600x400?text=SELD+Conference",
+      technologies: ["HTML", "CSS", "JavaScript", "Excel"],
+      link: "https://www.seldconference.org/registration-form"
     },
     // Add more projects as needed
   ];
