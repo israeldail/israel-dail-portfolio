@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Resend } from 'resend';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -7,10 +8,35 @@ export default function Contact() {
     subject: '',
     message: ''
   });
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Add your form submission logic here
+    setStatus('loading');
+
+    try {
+      const resend = new Resend('re_eKEfdEAR_B1jZdSWJnMcS4LMY5DJP7mkA');
+      
+      await resend.emails.send({
+        from: 'contact.dailwebdev.com', // This needs to be your verified domain or Resend's default
+        to: 'israeldail2@gmail.com',
+        replyTo: formData.email,
+        subject: formData.subject,
+        html: `
+          <h2>New Contact Form Submission</h2>
+          <p><strong>From:</strong> ${formData.name} (${formData.email})</p>
+          <p><strong>Subject:</strong> ${formData.subject}</p>
+          <p><strong>Message:</strong></p>
+          <p>${formData.message}</p>
+        `
+      });
+
+      setStatus('success');
+      setFormData({ name: '', email: '', subject: '', message: '' }); // Reset form
+    } catch (error) {
+      console.error('Failed to send email:', error);
+      setStatus('error');
+    }
   };
 
   return (
@@ -80,10 +106,23 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-colors mt-4"
+              disabled={status === 'loading'}
+              className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-colors mt-4 disabled:opacity-50"
             >
-              Send Message
+              {status === 'loading' ? 'Sending...' : 'Send Message'}
             </button>
+
+            {/* Status messages */}
+            {status === 'success' && (
+              <div className="text-green-500 text-sm mt-2">
+                Message sent successfully! We'll get back to you soon.
+              </div>
+            )}
+            {status === 'error' && (
+              <div className="text-red-500 text-sm mt-2">
+                Failed to send message. Please try again later.
+              </div>
+            )}
           </form>
         </div>
 
@@ -91,7 +130,7 @@ export default function Contact() {
         <div className="flex flex-col gap-8">
           <div className="bg-white rounded-lg p-6 shadow-lg">
             <h2 className="text-xl font-semibold mb-4">Other Ways to Connect</h2>
-            
+
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-4">
                 <i className="fa-solid fa-envelope text-2xl text-blue-500"></i>
@@ -107,8 +146,8 @@ export default function Contact() {
                 <i className="fa-brands fa-linkedin text-2xl text-blue-500"></i>
                 <div>
                   <h3 className="font-medium">LinkedIn</h3>
-                  <a 
-                    href="https://linkedin.com/in/israeldail" 
+                  <a
+                    href="https://linkedin.com/in/israeldail"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-500 hover:underline"
@@ -122,8 +161,8 @@ export default function Contact() {
                 <i className="fa-brands fa-github text-2xl text-blue-500"></i>
                 <div>
                   <h3 className="font-medium">GitHub</h3>
-                  <a 
-                    href="https://github.com/israeldail" 
+                  <a
+                    href="https://github.com/israeldail"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-500 hover:underline"
